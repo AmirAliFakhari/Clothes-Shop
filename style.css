@@ -87,6 +87,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-right: 7px;
 
 }
 
@@ -385,6 +386,7 @@ button.white {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
   padding: 0px 80px;
 }
 
