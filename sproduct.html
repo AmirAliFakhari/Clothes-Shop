@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
@@ -8,11 +9,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <section id="header">
-    <a href="#"><img src="https://logos.textgiraffe.com/logos/logo-name/Amirali-designstyle-cartoon-m.png" alt="" class="logo"></a>
+    <a href="#"><img src="https://logos.textgiraffe.com/logos/logo-name/Amirali-designstyle-cartoon-m.png" alt=""
+        class="logo"></a>
     <div>
-      <ul id="navbar">   
+      <ul id="navbar">
         <a href="#" id="close" class="fa fa-times"></a>
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="shop.html">Shop</a></li>
@@ -28,41 +31,53 @@
 
   <section id="prodetails" class="section-p1">
     <div class="single-pro-image">
-            <img src="./img/products/f1.jpg" width="100%" id="mainImg" alt="#">
+      <img src="./img/products/f1.jpg" width="100%" id="mainImg" alt="#">
 
-        <div class="small-pro-image">
-            <div class="small-img-col">
-                <img src="./img/products/f2.jpg" width="100%" class="small-img hi" id="hi" alt="">
-            </div>
-            <div class="small-img-col">
-                <img src="./img/products/f3.jpg" width="100%" class="small-img" alt="">
-            </div>
-            <div class="small-img-col">
-                <img src="./img/products/f4.jpg" width="100%" class="small-img" alt="">
-            </div>
-            <div class="small-img-col">
-                <img src="./img/products/f5.jpg" width="100%" class="small-img" alt="">
-            </div>    
+      <div class="small-pro-image">
+        <div class="small-img-col">
+          <img src="./img/products/f2.jpg" width="100%" class="small-img hi" id="hi" alt="">
         </div>
-    </div>       
+        <div class="small-img-col">
+          <img src="./img/products/f3.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="./img/products/f4.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="./img/products/f5.jpg" width="100%" class="small-img" alt="">
+        </div>
+      </div>
+    </div>
     <div class="single-pro-details">
-        <h6>Home / T-shirt</h6>
+      <h6>Home / T-shirt</h6>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <h4>Men's Fashion T Shirts</h4>
         <h2>$140.00</h2>
-        <select>
-            <option >Select Size</option>
-            <option >Xl</option>
-            <option >XXL</option>
-            <option >Small</option>
-            <option >Large</option>
-        </select>
-        <input type="number" value="1">
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 5px;">
+        <div style="display: flex; ">
+          <select>
+            <option>Select Size</option>
+            <option>Xl</option>
+            <option>XXL</option>
+            <option>Small</option>
+            <option>Large</option>
+          </select>
+          <input type="number" value="1">
+        </div>
         <button class="normal">Add To Cart</button>
+      </div>
+      <div id="pro-det">
         <h4>Product details</h4>
-        <span>A waterproof jacket is a trail-running essential. The High Point men's jacket features waterproof, breathable fabric plus vents for added breathability. It packs down small — or fits over a pack as a final layer. The semi-fitted silhouette ensures you always get full range of motion.</span>
-    </div>     
+        <span>A waterproof jacket is a trail-running essential. The High Point men's jacket features waterproof,
+          breathable fabric plus vents for added breathability. It packs down small — or fits over a pack as a final
+          layer. The semi-fitted silhouette ensures you always get full range of motion.</span>
+      </div>
+
+    </div>
   </section>
-  
+
   <section id="product1" class="section-p1">
     <h2>Featured Products</h2>
     <p>Summer Collections for u baby :)</p>
@@ -80,7 +95,7 @@
             <i class="fa fa-star"></i>
           </div>
           <h4>$78</h4>
-        </div>  
+        </div>
         <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
       </div>
       <div class="pro" onclick="window.location.href='sproduct.html'">
@@ -96,7 +111,7 @@
             <i class="fa fa-star"></i>
           </div>
           <h4>$78</h4>
-        </div>  
+        </div>
         <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
       </div>
       <div class="pro" onclick="window.location.href='sproduct.html'">
@@ -112,7 +127,7 @@
             <i class="fa fa-star"></i>
           </div>
           <h4>$78</h4>
-        </div>  
+        </div>
         <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
       </div>
       <div class="pro" onclick="window.location.href='sproduct.html'">
@@ -128,7 +143,7 @@
             <i class="fa fa-star"></i>
           </div>
           <h4>$43</h4>
-        </div>  
+        </div>
         <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
       </div>
   </section>
@@ -200,27 +215,28 @@
 
   </footer>
 
-  <script >
+  <script>
     let mainImg = document.getElementById('mainImg')
     var smallImg = document.getElementsByClassName('small-img')
     let openSinglePro = document.getElementsByClassName('open-pro')
     console.log(openSinglePro)
     // console.log(smallImg)
-  
-  smallImg[0].onclick = function () {
-    mainImg.src = smallimg[0].src
-  }
-  smallImg[1].onclick = function () {
-    mainImg.src = smallImg[1].src
-  }
-  smallImg[2].onclick = function () {
-    mainImg.src = smallImg[2].src
-  }
-  smallImg[3].onclick = function () {
-    mainImg.src = smallImg[3].src
-  }
-    
+
+    smallImg[0].onclick = function () {
+      mainImg.src = smallimg[0].src
+    }
+    smallImg[1].onclick = function () {
+      mainImg.src = smallImg[1].src
+    }
+    smallImg[2].onclick = function () {
+      mainImg.src = smallImg[2].src
+    }
+    smallImg[3].onclick = function () {
+      mainImg.src = smallImg[3].src
+    }
+
   </script>
-  <script src="/script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
