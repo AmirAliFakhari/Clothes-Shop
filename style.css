@@ -216,6 +216,8 @@ body {
   background-color: pink;
   /* height: 17px; */
   border-radius: 4px;
+  font-weight: 500;
+
 }
 
 #feature .fe-box:nth-child(2) h6 {
